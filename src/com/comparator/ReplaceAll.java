@@ -17,5 +17,9 @@ public class ReplaceAll {
         });
 
         System.out.println(ducks);
+
+        //ForEach Possibilities
+        ducks.forEach(System.out::println);
+        ducks.forEach(d -> System.out.println(d.getColor()));
     }
 }
