@@ -1,5 +1,8 @@
 package com.comparator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Duck implements Comparable<Duck>{
 
     private String color;
@@ -37,5 +40,13 @@ public class Duck implements Comparable<Duck>{
     @Override
     public int compareTo(Duck d2) {
         return color.compareTo(d2.color);
+    }
+
+    public static List<Duck>  ducksBuilder(){
+        List<Duck> ducks = new ArrayList<>();
+        ducks.add(new Duck("black", 1));
+        ducks.add(new Duck("brown", 4));
+        ducks.add(new Duck("white", 2));
+        return ducks;
     }
 }

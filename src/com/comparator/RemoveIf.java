@@ -14,10 +14,8 @@ public class RemoveIf {
                 new Duck("brown", 4),
                 new Duck("white", 2));*/
 
-        List<Duck> ducks = new ArrayList<>();
-        ducks.add(new Duck("black", 1));
-        ducks.add(new Duck("brown", 4));
-        ducks.add(new Duck("white", 2));
+
+        List<Duck> ducks = Duck.ducksBuilder();
 
         System.out.println(ducks);
 
