@@ -1,4 +1,4 @@
-package com.comparator;
+package com.java8;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -18,7 +18,7 @@ public class CompareObjects {
         //Here we compare using the Comparable implementation compareTo - By Color
         Collections.sort(ducks);
 
-        //Here we compare using the comparator by Age
+        //Here we compare using the java8 by Age
         //Collections.sort(ducks, byAge);
 
         System.out.println(ducks);

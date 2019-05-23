@@ -1,4 +1,4 @@
-package com.test;
+package com.java11;
 
 import java.util.Arrays;
 import java.util.regex.Pattern;
@@ -14,7 +14,7 @@ public class AsMatchPredicate {
                 Pattern.CASE_INSENSITIVE).asMatchPredicate();
 
         words.forEach((word) -> {
-            //test() method checks if given word matches to original word with compiled pattern
+            //java11() method checks if given word matches to original word with compiled pattern
             if (pred.test(word)) {
                 System.out.printf("%s matches to original word%n", word);
             } else {

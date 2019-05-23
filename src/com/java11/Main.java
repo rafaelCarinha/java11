@@ -1,4 +1,4 @@
-package com.test;
+package com.java11;
 
 public class Main {
 
