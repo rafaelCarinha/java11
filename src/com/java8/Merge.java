@@ -10,7 +10,7 @@ public class Merge {
         //Mapper will check for longest word. The preference is the longest
         BiFunction<String, String, String> mapper = (v1, v2) -> v1.length() > v2.length() ? v1 : v2;
 
-        Map<String, String> fighters = Fighters.favoriteFighters();
+        Map<String, String> fighters = Fighter.favoriteFighters();
 
         System.out.println(fighters);
 

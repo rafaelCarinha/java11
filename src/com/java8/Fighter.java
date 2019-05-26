@@ -1,0 +1,42 @@
+package com.java8;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Fighter {
+
+    private String name;
+    private Integer age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public Fighter(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public static Map<String, String> favoriteFighters(){
+
+        Map<String, String> favoriteFighters = new HashMap<>();
+        favoriteFighters.put("Rafa", "Robbie Lawler");
+        favoriteFighters.put("Vivian", "Cris Cyborg");
+        favoriteFighters.put("Everybody", "Connor McGreggor");
+
+        return favoriteFighters;
+
+    }
+}

@@ -9,6 +9,9 @@ public class ComputeIf {
 
     public static void main(String[] args) {
 
+        //ComputeIfPresent takes a ByFunction
+        //ComputeIfAbsent takes a Function
+
         Map<String, Integer> wins = new HashMap<>();
         wins.put("Silva", 10);
         wins.put("Aldo", 9);
