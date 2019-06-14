@@ -19,12 +19,12 @@ public class LocalVariableLambda {
         // parameters of an implicitly typed lambda expression:
         BiPredicate<String, String> pred = (x, y) -> x.equals(y);
 
-        BiPredicate<String, String> predVar = (var x, var y) -> x.equals(y);
+        //BiPredicate<String, String> predVar = (var x, var y) -> x.equals(y);
 
         boolean equalString = pred.test("Rafael", "Rafael");
 
         System.out.println(equalString);
 
-        System.out.println(predVar.test("Rafael", "Rafael"));
+        //System.out.println(predVar.test("Rafael", "Rafael"));
     }
 }
