@@ -1,5 +1,8 @@
 package com.java11;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
 
     private int x;
@@ -14,13 +17,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World!");
+        List<String> strings = Arrays.asList("1, 2, 3");
 
-        int a[] = {1,2,3,4};
-        int b[] = {2,3,1,0};
-        System.out.println( a [( a = b)[3] ]);
+        System.out.println(strings.stream().map(o -> o.toString()));
 
 
 
     }
 }
+
+
