@@ -1,6 +1,8 @@
 package com.java8;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Fighter {
@@ -38,5 +40,17 @@ public class Fighter {
 
         return favoriteFighters;
 
+    }
+
+    public static List<Fighter> fightersBuilder(){
+        List<Fighter> fighters = new ArrayList<>();
+        fighters.add(new Fighter("Robbie Lawler", 37));
+        fighters.add(new Fighter("Cris Cyborg", 36));
+        fighters.add(new Fighter("Connor McGreggor", 31));
+        return fighters;
+    }
+
+    public String toString() {
+        return this.name + ": "+this.age;
     }
 }
